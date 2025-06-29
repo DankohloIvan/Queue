@@ -60,7 +60,6 @@ public:
 
     int Peek() const {
         if (IsEmpty()) {
-            std::cerr << "Queue is empty!\n";
             return -1;
         }
         return data[0];
@@ -68,7 +67,6 @@ public:
 
     void Show() const {
         if (IsEmpty()) {
-            std::cout << "(empty queue)\n";
             return;
         }
         for (int i = 0; i < size; ++i)
